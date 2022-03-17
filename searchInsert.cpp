@@ -1,4 +1,4 @@
-int RecDef(vector<int>& nums, int& target, bool isEven, int l, int r){
+int RecDef(vector<int>& nums, int& target, int l, int r){
     
             
         int mid = (r-l)/2;
@@ -24,10 +24,10 @@ int RecDef(vector<int>& nums, int& target, bool isEven, int l, int r){
 
         if(nums[mid] < target){
 
-           return RecDef(nums,target, isEven,  mid + 1, r); 
+           return RecDef(nums,target, mid + 1, r); 
         }else{
 
-           return RecDef(nums, target, isEven, l,  mid - 1); 
+           return RecDef(nums, target, l,  mid - 1); 
         }
 
         return 0;
@@ -35,8 +35,5 @@ int RecDef(vector<int>& nums, int& target, bool isEven, int l, int r){
     
     
     int searchInsert(vector<int>& nums, int target) {
-   
-     bool isEven = 1 - nums.size() % 2;
-     int mid = nums.size()/2;
-     return RecDef(nums, target, isEven, 0, nums.size());  
+     return RecDef(nums, target, 0, nums.size());  
     }
