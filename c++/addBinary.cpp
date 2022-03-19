@@ -84,9 +84,6 @@ string addBinary(string a, string b) {
     
         
        
-        string ret = "";
-        for(int i = end.size() - 1; i >= 0; --i){
-            ret += end[i];
-        }
-        return ret;
+        reverse(end.begin(), end.end());
+        return end;
     }
