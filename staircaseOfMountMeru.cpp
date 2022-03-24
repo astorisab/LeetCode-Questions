@@ -20,3 +20,8 @@ vector<vector<int>> generate(int numRows) {
         return nextRow;
     }
 };
+
+
+
+
+// https://www.youtube.com/watch?v=XMriWTvPXHI -> The history
