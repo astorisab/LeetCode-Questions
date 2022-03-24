@@ -24,4 +24,4 @@ vector<vector<int>> generate(int numRows) {
 
 
 
-// https://www.youtube.com/watch?v=XMriWTvPXHI -> The history
+// https://www.youtube.com/watch?v=XMriWTvPXHI -> The history...
