@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # Stop on errors, print commands
@@ -6,19 +7,20 @@ set -Eeuo pipefail
 set -x
 
 
-
 for cpp in *.cpp
+
 do
-   [mv "$cpp" c++] || continue
+   mv $cpp c++ || continue
 done
+
 echo "cpp files moved"
 for py in *.py
 do
-   [mv "$py" python] || continue
+   mv "$py" python || continue
 done
 echo "python files moved"
 for swift in *.swift
 do
-   [mv "$swift" swift] || continue
+   mv "$swift" swift: || continue
 done
 echo "swift files moved"
