@@ -6,6 +6,11 @@ set -Eeuo pipefail
 set -x
 
 
-mv *.cpp c++
+
+for cpp in *.cpp
+do
+   [mv "$cpp" c++] || continue
+done
+echo "cpp files moved"
 mv *.py python
 mv *.swift swift
