@@ -12,5 +12,13 @@ do
    [mv "$cpp" c++] || continue
 done
 echo "cpp files moved"
-mv *.py python
-mv *.swift swift
+for py in *.py
+do
+   [mv "$py" python] || continue
+done
+echo "python files moved"
+for swift in *.swift
+do
+   [mv "$swift" swift] || continue
+done
+echo "swift files moved"
