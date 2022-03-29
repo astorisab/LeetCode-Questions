@@ -11,3 +11,7 @@ vector<int> preorderTraversal(TreeNode* root) {
         return start;
          
     }
+
+
+//merging vectors reference
+https://stackoverflow.com/questions/201718/concatenating-two-stdvectors
