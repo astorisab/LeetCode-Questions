@@ -21,6 +21,6 @@ done
 echo "python files moved"
 for swift in *.swift
 do
-   mv "$swift" swift: || continue
+   mv "$swift" swift || continue
 done
 echo "swift files moved"
